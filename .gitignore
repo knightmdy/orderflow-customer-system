@@ -1,21 +1,12 @@
-# Dependencies
+# 依赖目录
 node_modules/
-.pnpm-store/
 
-# Environment variables
+# 环境配置文件
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
 
-# Build outputs
-dist/
-build/
-.next/
-out/
-
-# Logs
+# 日志文件
 logs
 *.log
 npm-debug.log*
@@ -23,24 +14,21 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+# 编辑器目录和文件
 .idea
-.DS_Store
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Testing
-coverage/
-.nyc_output/
-
-# Misc
+# 系统文件
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local 
+Thumbs.db
+
+# 构建输出目录
+dist
+dist-ssr
+build
+coverage 
